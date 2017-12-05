@@ -24,4 +24,11 @@ public class ConexaoFactory {
 		
 		return factory.createEntityManager();
 	}
+	
+	private void mai() {
+		EntityManager manager = new ConexaoFactory().getInstancia();
+		
+		manager.getTransaction().begin();
+
+	}
 }
